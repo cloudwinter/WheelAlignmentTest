@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_frame_cehicles">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp_12"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/qiu" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:text="# 2"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp_15" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_2"
+                android:layout_marginTop="@dimen/dp_12"
+                android:background="#ECEDED" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ccd_data0_B"
+                    android:textSize="@dimen/sp_13" />
+
+                <EditText
+                    android:id="@+id/et_ccd_data0_b"
+                    android:layout_width="@dimen/dp_140"
+                    android:layout_height="@dimen/dp_36"
+                    android:layout_marginLeft="@dimen/dp_50"
+                    android:background="@drawable/btn_round_gray"
+                    android:hint="@string/str_input_data"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:textSize="@dimen/sp_12" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_2"
+                android:background="#ECEDED" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ccd_data1_B"
+                    android:textSize="@dimen/sp_13" />
+
+                <EditText
+                    android:id="@+id/et_ccd_data1_b"
+                    android:layout_width="@dimen/dp_140"
+                    android:layout_height="@dimen/dp_36"
+                    android:layout_marginLeft="@dimen/dp_50"
+                    android:background="@drawable/btn_round_gray"
+                    android:hint="@string/str_input_data"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:textSize="@dimen/sp_13" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_2"
+                android:background="#ECEDED" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Roll_B"
+                    android:textSize="@dimen/sp_13" />
+
+                <EditText
+                    android:id="@+id/et_roll_b"
+                    android:layout_width="@dimen/dp_140"
+                    android:layout_height="@dimen/dp_36"
+                    android:layout_marginLeft="@dimen/dp_90"
+                    android:background="@drawable/btn_round_gray"
+                    android:hint="@string/str_input_data"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:textSize="@dimen/sp_12" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_2"
+                android:background="#ECEDED" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pitch_B"
+                    android:textSize="@dimen/sp_13" />
+
+                <EditText
+                    android:id="@+id/et_pitch_b"
+                    android:layout_width="@dimen/dp_140"
+                    android:layout_height="@dimen/dp_36"
+                    android:layout_marginLeft="@dimen/dp_81"
+                    android:background="@drawable/btn_round_gray"
+                    android:hint="@string/str_input_data"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_2"
+                android:background="#ECEDED" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yaw_B"
+                    android:textSize="@dimen/sp_13" />
+
+                <EditText
+                    android:id="@+id/et_yaw_b"
+                    android:layout_width="@dimen/dp_140"
+                    android:layout_height="@dimen/dp_36"
+                    android:layout_marginLeft="@dimen/dp_86"
+                    android:background="@drawable/btn_round_gray"
+                    android:hint="@string/str_input_data"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_2"
+                android:background="#ECEDED" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_20"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_modify2"
+                android:layout_width="@dimen/dp_113"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_round_greed_frame"
+                android:text="@string/str_modify"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_14" />
+
+            <Button
+                android:id="@+id/btn_keep2"
+                android:layout_width="@dimen/dp_113"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_40"
+                android:background="@drawable/btn_round_blue"
+                android:text="@string/str_Save"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

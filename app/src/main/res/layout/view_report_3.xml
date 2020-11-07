@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?><!--转向1-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_to_turn_to_3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_190"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp_15"
+            android:layout_marginLeft="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_80"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_24"
+                        android:background="@drawable/btn_half_top_white"
+                        android:gravity="center"
+                        android:text="@string/str_wheel_camber"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_8" />
+
+                    <TextView
+                        android:id="@+id/tv3_wheel_camber_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_24"
+                        android:background="@drawable/btn_half_middle_bule"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_10" />
+
+                    <TextView
+                        android:id="@+id/tv3_wheel_camber_b"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_24"
+                        android:background="@drawable/btn_half_bottom_white"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_2"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_24"
+                        android:background="@drawable/btn_half_top_white"
+                        android:gravity="center"
+                        android:text="@string/str_front_beam"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_8" />
+
+                    <TextView
+                        android:id="@+id/tv3_front_beam_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_24"
+                        android:background="@drawable/btn_half_middle_bule"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_10" />
+
+                    <TextView
+                        android:id="@+id/tv3_front_beam_b"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_24"
+                        android:background="@drawable/btn_half_bottom_white"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_10" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_80"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_24"
+                        android:background="@drawable/btn_half_top_white"
+                        android:gravity="center"
+                        android:text="@string/str_kingpin_backward"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_8" />
+
+                    <TextView
+                        android:id="@+id/tv3_kingpin_backward_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_24"
+                        android:background="@drawable/btn_half_middle_bule"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_10" />
+
+                    <TextView
+                        android:id="@+id/tv3_kingpin_backward_b"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_24"
+                        android:background="@drawable/btn_half_bottom_white"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_2"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_24"
+                        android:background="@drawable/btn_half_top_white"
+                        android:gravity="center"
+                        android:text="@string/str_kingpin_introversion"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_8" />
+
+                    <TextView
+                        android:id="@+id/tv3_kingpin_introversion_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_24"
+                        android:background="@drawable/btn_half_middle_bule"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_10" />
+
+                    <TextView
+                        android:id="@+id/tv3_kingpin_introversion_b"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_24"
+                        android:background="@drawable/btn_half_bottom_white"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_10" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_90"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="@dimen/dp_58"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="@dimen/dp_57"
+                    android:layout_height="@dimen/dp_24"
+                    android:background="@drawable/btn_half_top_white"
+                    android:gravity="center"
+                    android:text="@string/str_total_front_beam"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp_10" />
+
+                <TextView
+                    android:id="@+id/tv3_total_front_beam_a"
+                    android:layout_width="@dimen/dp_57"
+                    android:layout_height="@dimen/dp_21"
+                    android:background="@drawable/btn_half_middle_bule"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp_10" />
+
+                <TextView
+                    android:id="@+id/tv3_total_front_beam_b"
+                    android:layout_width="@dimen/dp_57"
+                    android:layout_height="@dimen/dp_21"
+                    android:background="@drawable/btn_half_bottom_white"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp_10" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/to_turn_to" />
+
+            <LinearLayout
+                android:layout_width="@dimen/dp_58"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="@dimen/dp_57"
+                    android:layout_height="@dimen/dp_24"
+                    android:background="@drawable/btn_half_top_white"
+                    android:gravity="center"
+                    android:text="@string/str_sync_value"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp_10" />
+
+                <TextView
+                    android:id="@+id/tv3_sync_value_a"
+                    android:layout_width="@dimen/dp_57"
+                    android:layout_height="@dimen/dp_21"
+                    android:background="@drawable/btn_half_middle_bule"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp_10" />
+
+                <TextView
+                    android:id="@+id/tv3_sync_value_b"
+                    android:layout_width="@dimen/dp_57"
+                    android:layout_height="@dimen/dp_21"
+                    android:background="@drawable/btn_half_bottom_white"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp_10" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_80"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_24"
+                        android:background="@drawable/btn_half_top_white"
+                        android:gravity="center"
+                        android:text="@string/str_front_beam"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_10" />
+
+                    <TextView
+                        android:id="@+id/tv3_front_beam_a2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_24"
+                        android:background="@drawable/btn_half_middle_bule"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_10" />
+
+                    <TextView
+                        android:id="@+id/tv3_front_beam_b2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_24"
+                        android:background="@drawable/btn_half_bottom_white"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/dp_2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_24"
+                        android:background="@drawable/btn_half_top_white"
+                        android:gravity="center"
+                        android:text="@string/str_wheel_camber"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_8" />
+
+                    <TextView
+                        android:id="@+id/tv3_wheel_camber_a2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_24"
+                        android:background="@drawable/btn_half_middle_bule"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_10" />
+
+                    <TextView
+                        android:id="@+id/tv3_wheel_camber_b2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_24"
+                        android:background="@drawable/btn_half_bottom_white"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_10" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_80"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_24"
+                        android:background="@drawable/btn_half_top_white"
+                        android:gravity="center"
+                        android:text="@string/str_kingpin_introversion"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_10" />
+
+                    <TextView
+                        android:id="@+id/tv3_kingpin_introversion_a2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_24"
+                        android:background="@drawable/btn_half_middle_bule"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_10" />
+
+                    <TextView
+                        android:id="@+id/tv3_kingpin_introversion_b2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_24"
+                        android:background="@drawable/btn_half_bottom_white"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/dp_2"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_24"
+                        android:background="@drawable/btn_half_top_white"
+                        android:gravity="center"
+                        android:text="@string/str_kingpin_backward"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_10" />
+
+                    <TextView
+                        android:id="@+id/tv3_kingpin_backward_a2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_24"
+                        android:background="@drawable/btn_half_middle_bule"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_10" />
+
+                    <TextView
+                        android:id="@+id/tv3_kingpin_backward_b2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_24"
+                        android:background="@drawable/btn_half_bottom_white"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_10" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</merge>

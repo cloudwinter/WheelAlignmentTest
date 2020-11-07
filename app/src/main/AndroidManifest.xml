@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.inprintech.wheelalignmenttest">
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:configChanges="locale"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.MainActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.RegisterActivity" />
+        <activity android:name=".Activity.VehicleInfoActivity" />
+        <activity android:name=".Activity.DefiningVehiclesActivity" />
+        <activity android:name=".Activity.StoreSetupActivity" />
+        <activity android:name=".Activity.UserRecordActivity" />
+        <activity android:name=".Activity.MeasureAdjustActivity" />
+        <activity android:name=".Activity.SettingsActivity" />
+        <activity android:name=".Activity.DiagnosisActivity" />
+        <activity android:name=".Activity.LanguageSetActivity" />
+        <activity android:name=".Activity.CalibrationActivity" />
+        <activity android:name=".Activity.DeviceManagerActivity" />
+        <activity android:name=".Activity.CoaxialAdjustActivity" />
+        <activity android:name=".Activity.KingpinMeasureActivity" />
+        <activity android:name=".Activity.ToeinMeasureActivity" />
+        <activity android:name=".Activity.SyncAdjustActivity" />
+        <activity android:name=".Activity.AxleMeasureActivity" />
+        <activity android:name=".Activity.DisplayAllActivity" />
+        <activity android:name=".Activity.PrintReportActivity" />
+        <activity android:name=".Activity.UserReportActivity" />
+        <activity android:name=".Activity.DeviceDetailsActivity" />
+        <activity android:name=".Activity.TestSetupActivity" />
+
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+</manifest>

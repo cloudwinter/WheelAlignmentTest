@@ -1,0 +1,162 @@
+<resources xmlnstools="http//schemas.android.com/tools">
+    <string name="app_name">Four Wheel Alignment Test</string>
+    <!--  首页  -->
+    <string name="str_user_data">User Data</string>
+    <string name="str_system_setup">Setup</string>
+    <string name="str_start_positioning">Location</string>
+    <!--  管理员界面  -->
+    <string name="str_del">Delete</string>
+    <string name="str_input_device_id">Please enter the device ID</string>
+    <!--  登陆  -->
+    <string name="str_login">Login</string>
+    <string name="str_input_login_account">Please enter the login account</string>
+    <string name="str_input_login_pwd">Please enter the login password</string>
+    <string name="str_remember_pws_login">Remember the password and log in</string>
+    <!--  注册  -->
+    <string name="str_register">Register</string>
+    <string name="str_input_phone">Please enter your mobile number</string>
+    <string name="str_input_pwd">Please input a password</string>
+    <!--  用户记录  -->
+    <string name="str_user_record">user record</string>
+    <string name="str_input_register_number">Please enter register number</string>
+    <!--  定位测量报表  -->
+    <string name="str_location_survey_report">Location survey report</string>
+    <string name="str_printing">Printing</string>
+    <!--  店家设置  -->
+    <string name="str_store_name">Shop name</string>
+    <string name="str_address">Address</string>
+    <string name="str_telephone">Telephone</string>
+    <string name="str_fax">Fax</string>
+    <string name="str_postcodes">Postcodes</string>
+    <string name="str_operator">Operator</string>
+    <string name="str_share">Share</string>
+    <!--  语言设置  -->
+    <string name="str_simplified_chinese">简体中文</string>
+    <string name="str_english">English</string>
+    <string name="str_englishs">English</string>
+    <!--  诊断  -->
+    <string name="str_no_network">No network</string>
+    <!--  标定  -->
+    <string name="str_upload">upload</string>
+    <string name="str_read_back">Read back</string>
+    <string name="str_administration">Admin</string>
+    <string name="str_calibration_success">Calibration success</string>
+    <string name="str_input_data">Please input data</string>
+    <string name="str_device_selection">Device selection in progress</string>
+    <string name="str_please_select_device">Please select a device</string>
+    <string name="str_device1">Device 1</string>
+    <string name="str_device2">Device 2</string>
+    <!-- 车辆信息 -->
+    <string name="str_vehicle_info">Vehicle information</string>
+    <!-- 定义车辆 -->
+    <string name="str_defining_vehicles">Defining vehicles</string>
+    <string name="str_to_turn_to">Steering wheel</string>
+    <string name="str_load_bearing_bridge">Burden Wheel</string>
+    <!-- 测量调整 -->
+    <string name="str_measurement_adjustment">Measurement adjustment</string>
+    <string name="str_coaxial_adjustment">coaxiality Calibration</string>
+    <string name="str_kngpin_measurement">kingpin angle Measurement</string>
+    <string name="str_toe_in_measurement">toe-in Measurement</string>
+    <string name="str_sync_measurement">sync measurement</string>
+    <string name="str_axle_measurement">axle measurement</string>
+    <string name="str_print_report">print report</string>
+    <!--  主销测量  -->
+    <string name="str_turn_wheel_right">Turn the wheel to the right</string>
+    <string name="str_turn_wheel_left">Turn the wheel to the left</string>
+    <string name="str_adjust_the_wheel_to_0">Adjust the wheel to 0</string>
+    <string name="str_caster_angle">caster angle</string>
+    <string name="str_camber">inclination angle</string>
+    <string name="str_max_steering_angle">Max steering angle</string>
+    <string name="str_camber_angle">Camber Angle</string>
+    <!--  综合展示  -->
+    <string name="str_synthesize_display">Synthesize Display</string>
+    <!--  同轴调整  -->
+    <string name="str_left">left</string>
+    <string name="str_right">right</string>
+    <string name="str_horizontal_inclination_angle">horizontal angle:</string>
+    <string name="str_reference_value">Reference value:</string>
+    <string name="str_coaxial_compensation">Coaxiality Calibration:</string>
+    <string name="str_turn_180">请转动180°</string>
+    <!-- 前束测量 -->
+    <string name="str_adjus_horizontal">Adjust equipment to horizontal position</string>
+    <string name="str_left_horizontal_inclination">left horizonal angle</string>
+    <string name="str_right_horizontal_inclination">right horizonal angle</string>
+    <string name="str_total_toe_in">total toe</string>
+    <string name="str_save_data">Save the data</string>
+    <!--  同步测量  -->
+    <string name="str_turn_left_5">Turn left 5°</string>
+    <string name="str_turn_right_5">Turn right 5°</string>
+    <string name="str_measuring_angle">Measuring angle</string>
+    <string name="str_direction_angle">Direction angle</string>
+    <string name="str_sync_valus">Sync value</string>
+    <string name="str_left_measuring_angle">Left measuring angle</string>
+    <string name="str_right_measuring_angle">Right measuring angle</string>
+    <string name="str_right_measuring_angle_invalid">Right measuring angle invalid</string>
+
+    <!--  共用  -->
+    <string name="str_manage">manage</string>
+    <string name="str_clear">clear</string>
+    <string name="str_record">record</string>
+    <string name="str_register_number">register number</string>
+    <string name="str_date">date</string>
+    <string name="str_edit">edit</string>
+    <string name="str_accomplish">Refresh</string>
+    <string name="str_complete">Complete</string>
+    <string name="str_store_setup">store setup</string>
+    <string name="str_test_setup">test setup</string>
+    <string name="str_language">language setup</string>
+    <string name="str_diagnosis">diagnosis</string>
+    <string name="str_cancel">cancel</string>
+    <string name="str_calibration">calibration</string>
+    <string name="str_modify">revise</string>
+    <string name="str_Save">Save</string>
+    <string name="str_confirm">Confirm</string>
+    <string name="str_examine">VIEW</string>
+    <string name="str_customer_info">customer info</string>
+    <string name="str_mileage">mileage</string>
+    <string name="str_signature">signature</string>
+    <string name="str_vehicle_type">vehicle type</string>
+    <string name="str_next_step">Next</string>
+    <string name="str_determine">determine</string>
+    <string name="str_submit">Submit</string>
+    <string name="str_customer_signature">signature</string>
+    <string name="str_device_details">device details</string>
+    <string name="str_save_successfully">Save successfully</string>
+    <string name="str_coaxial_adjust_save_error">can not Save,not set reference</string>
+    <string name="str_exit_the_program">Press again to exit the program</string>
+    <string name="str_upload_success">Upload success</string>
+    <string name="str_data_cannot_empty">Data cannot be empty</string>
+    <string name="str_login_success">Login successfully</string>
+    <string name="str_account_pwd_wrong">Wrong account or password</string>
+    <string name="str_account_pwd_null">Account or password cannot be empty</string>
+    <string name="str_register_success">registered successfully</string>
+    <string name="str_edit_phone_pwd">Please enter your phone number or password</string>
+    <string name="str_sign_you_name">Not signed yet</string>
+    <string name="str_mileage_cannot_null">Mileage cannot be empty</string>
+    <string name="str_manufacturer_cannot_null">Manufacturer cannot be empty</string>
+    <string name="str_vehicle_type_cannot_null">Model cannot be empty</string>
+    <string name="str_customer_info_cannot_null">Customer information cannot be empty</string>
+    <string name="str_incorrect_date_format">Date cannot be empty</string>
+    <string name="str_registration_number_cannot_null">Registration No. cannot be empty</string>
+    <string name="str_saved_to_allery">Saved to Gallery</string>
+    <string name="str_after_adjustment">After adjustment</string>
+    <string name="str_before_adjustment">Before adjustment</string>
+    <string name="str_select_device_status">Please select device status</string>
+    <string name="str_adjusting">adjusting</string>
+    <!--  报表  -->
+    <string name="str_manufacturer">manufacturer</string>
+    <string name="str_model">model</string>
+    <string name="str_after">After</string>
+    <string name="str_before">Before</string>
+    <string name="str_wheel_camber">wheel camber</string>
+    <string name="str_front_beam">front beam</string>
+    <string name="str_kingpin_backward">kingpin backward</string>
+    <string name="str_kingpin_introversion">kingpin introversion</string>
+    <string name="str_total_front_beam">total front beam</string>
+    <string name="str_Axle_survey">Axle survey</string>
+    <string name="str_sync_value">sync value</string>
+    <string name="str_pitch_value">pitch value</string>
+
+    <string name="str_test_kngpin_measurement">kingpin Measurement</string>
+    <string name="str_time_interval">Time Interval MS</string>
+</resources>
