@@ -9,6 +9,7 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.PorterDuff;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
@@ -206,19 +207,24 @@ public class LinePathView extends View {
     @SuppressLint("WrongThread")
     public byte[] save(boolean clearBlank, int blank) {
         Bitmap bitmap = cachebBitmap;
-        if (clearBlank) {
-            bitmap = clearBlank(bitmap, blank);
-        }
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
         try {
+            if (clearBlank) {
+                bitmap = clearBlank(bitmap, blank);
+            }
             bitmap.compress(Bitmap.CompressFormat.PNG, 100, bos);
             byte[] buffer = bos.toByteArray();
             return buffer;
         } catch (Exception e) {
+            Log.e("LinePathView", "save:异常 ", e);
         } finally {
             try {
-                bitmap.recycle();
-                bos.close();
+                if (bitmap != null) {
+                    bitmap.recycle();
+                }
+                if (bos != null) {
+                    bos.close();
+                }
             } catch (IOException e) {
                 e.printStackTrace();
             }

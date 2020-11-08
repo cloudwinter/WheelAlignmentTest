@@ -195,14 +195,14 @@ public class Constants {
     }
 
     /* 标定*/
-    public static final byte[] calibration() {
+    public static final byte[] calibration(byte selectT) {
         byte[] heartbeatOrder = new byte[26];
         heartbeatOrder[0] = (byte) 0x55;
         heartbeatOrder[1] = (byte) 0xAA;
         heartbeatOrder[2] = (byte) 0x00;
         heartbeatOrder[3] = (byte) 0x01;
         heartbeatOrder[4] = (byte) 0x02;
-        heartbeatOrder[5] = (byte) 0x03;
+        heartbeatOrder[5] = selectT;
         heartbeatOrder[6] = (byte) 0x1A;
         heartbeatOrder[7] = (byte) 0xC0;
         heartbeatOrder[8] = (byte) 0x01;
@@ -226,14 +226,14 @@ public class Constants {
         return heartbeatOrder;
     }
 
-    public static final byte[] calibration2() {
+    public static final byte[] calibration2(byte selectT) {
         byte[] heartbeatOrder = new byte[26];
         heartbeatOrder[0] = (byte) 0x55;
         heartbeatOrder[1] = (byte) 0xAA;
         heartbeatOrder[2] = (byte) 0x00;
         heartbeatOrder[3] = (byte) 0x01;
         heartbeatOrder[4] = (byte) 0x02;
-        heartbeatOrder[5] = (byte) 0x03;
+        heartbeatOrder[5] = selectT;
         heartbeatOrder[6] = (byte) 0x1A;
         heartbeatOrder[7] = (byte) 0xC0;
         heartbeatOrder[8] = (byte) 0x02;

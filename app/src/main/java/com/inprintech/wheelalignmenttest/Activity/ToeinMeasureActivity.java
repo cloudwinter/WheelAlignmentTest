@@ -45,6 +45,7 @@ public class ToeinMeasureActivity extends BaseActivity implements View.OnClickLi
     private TextView tvTips;
     private TextView tvRoll1, tvRoll2, tv_direction_angle, tv_total_toe_in;
     private View roll_bg1, roll_bg2, direction_angle_bg, total_toe_in_bg;
+    private TextView tvT1,tvT3;
 
     private SocketUitls socketUitls = new SocketUitls();
     private boolean socket;
@@ -131,6 +132,8 @@ public class ToeinMeasureActivity extends BaseActivity implements View.OnClickLi
         roll_bg2 = findViewById(R.id.roll_bg2);
         direction_angle_bg = findViewById(R.id.direction_angle_bg);
         total_toe_in_bg = findViewById(R.id.total_toe_in_bg);
+        tvT1 = findViewById(R.id.text_t1);
+        tvT3 = findViewById(R.id.text_t3);
 
         imgBack.setOnClickListener(this);
         btnSave.setOnClickListener(this);
@@ -187,6 +190,8 @@ public class ToeinMeasureActivity extends BaseActivity implements View.OnClickLi
                                     if (ccd_data0_flag == 1) {
                                         Ccd_data0_1 = UITools.Ccd_data(UITools.M(data[14], data[15]));
                                         Log.i(TAG, "run: Ccd_data0_1-" + Ccd_data0_1);
+                                        // 设置T1
+                                        tvT1.setText(NumberUtils.double2Str(Ccd_data0_1));
                                     }
                                     if (roll_pitch_yaw_flag == 1) {
                                         roll1 = UITools.Roll(data[18], data[19]);
@@ -196,6 +201,8 @@ public class ToeinMeasureActivity extends BaseActivity implements View.OnClickLi
                                     if (ccd_data0_flag == 1) {
                                         Ccd_data0_2 = UITools.Ccd_data(UITools.M(data[14], data[15]));
                                         Log.i(TAG, "run: Ccd_data0_2-" + Ccd_data0_2);
+                                        // 设置T1
+                                        tvT3.setText(NumberUtils.double2Str(Ccd_data0_2));
                                     }
                                     if (roll_pitch_yaw_flag == 1) {
                                         roll2 = UITools.Roll(data[18], data[19]);

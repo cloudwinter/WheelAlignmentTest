@@ -23,6 +23,7 @@ import com.inprintech.wheelalignmenttest.R;
 import com.inprintech.wheelalignmenttest.Utils.Constants;
 import com.inprintech.wheelalignmenttest.Utils.SocketUitls;
 import com.inprintech.wheelalignmenttest.Utils.UITools;
+import com.inprintech.wheelalignmenttest.dialog.CalibrationDialog;
 
 import java.net.Socket;
 
@@ -157,37 +158,65 @@ public class CalibrationActivity extends BaseActivity implements View.OnClickLis
                 finish();
                 break;
             case R.id.ll_calibration://标定
-                AlertDialog.Builder builder = new AlertDialog.Builder(CalibrationActivity.this);
-                builder.setTitle(getResources().getString(R.string.str_device_selection));
-                builder.setMessage(getResources().getString(R.string.str_please_select_device));
-                builder.setPositiveButton(getResources().getString(R.string.str_device2), new DialogInterface.OnClickListener() {
+                CalibrationDialog calibrationDialog = new CalibrationDialog(CalibrationActivity.this);
+                calibrationDialog.setButtonClickListener(new CalibrationDialog.ButtonClickListener() {
                     @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        sendCommand(Constants.calibration2());
-                        AlertDialog.Builder builder1 = new AlertDialog.Builder(CalibrationActivity.this);
-                        View viewDialog1 = View.inflate(CalibrationActivity.this, R.layout.dialog_calibration_success, null);
-                        builder1.setView(viewDialog1);
-                        final AlertDialog alertDialog1 = builder1.create();
-                        alertDialog1.create();
-                        alertDialog1.show();
+                    public void onClick(int device, byte selectT) {
+                        switch (device) {
+                            case 1:
+                                sendCommand(Constants.calibration(selectT));
+                                AlertDialog.Builder builder2 = new AlertDialog.Builder(CalibrationActivity.this);
+                                View viewDialog2 = View.inflate(CalibrationActivity.this, R.layout.dialog_calibration_success, null);
+                                builder2.setView(viewDialog2);
+                                final AlertDialog alertDialog2 = builder2.create();
+                                alertDialog2.create();
+                                alertDialog2.show();
+                                break;
+                            case 2:
+                                sendCommand(Constants.calibration2(selectT));
+                                AlertDialog.Builder builder1 = new AlertDialog.Builder(CalibrationActivity.this);
+                                View viewDialog1 = View.inflate(CalibrationActivity.this, R.layout.dialog_calibration_success, null);
+                                builder1.setView(viewDialog1);
+                                final AlertDialog alertDialog1 = builder1.create();
+                                alertDialog1.create();
+                                alertDialog1.show();
+                                break;
+                        }
                     }
                 });
-                builder.setNegativeButton(getResources().getString(R.string.str_device1), new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        sendCommand(Constants.calibration());
-                        AlertDialog.Builder builder2 = new AlertDialog.Builder(CalibrationActivity.this);
-                        View viewDialog2 = View.inflate(CalibrationActivity.this, R.layout.dialog_calibration_success, null);
-                        builder2.setView(viewDialog2);
-                        final AlertDialog alertDialog2 = builder2.create();
-                        alertDialog2.create();
-                        alertDialog2.show();
-                    }
-                });
-                AlertDialog alertDialog = builder.create();
-                alertDialog.setCanceledOnTouchOutside(false);
-                alertDialog.create();
-                alertDialog.show();
+                calibrationDialog.show();
+
+//                AlertDialog.Builder builder = new AlertDialog.Builder(CalibrationActivity.this);
+//                builder.setTitle(getResources().getString(R.string.str_device_selection));
+//                builder.setMessage(getResources().getString(R.string.str_please_select_device));
+//                builder.setPositiveButton(getResources().getString(R.string.str_device2), new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialog, int which) {
+//                        sendCommand(Constants.calibration2());
+//                        AlertDialog.Builder builder1 = new AlertDialog.Builder(CalibrationActivity.this);
+//                        View viewDialog1 = View.inflate(CalibrationActivity.this, R.layout.dialog_calibration_success, null);
+//                        builder1.setView(viewDialog1);
+//                        final AlertDialog alertDialog1 = builder1.create();
+//                        alertDialog1.create();
+//                        alertDialog1.show();
+//                    }
+//                });
+//                builder.setNegativeButton(getResources().getString(R.string.str_device1), new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialog, int which) {
+//                        sendCommand(Constants.calibration());
+//                        AlertDialog.Builder builder2 = new AlertDialog.Builder(CalibrationActivity.this);
+//                        View viewDialog2 = View.inflate(CalibrationActivity.this, R.layout.dialog_calibration_success, null);
+//                        builder2.setView(viewDialog2);
+//                        final AlertDialog alertDialog2 = builder2.create();
+//                        alertDialog2.create();
+//                        alertDialog2.show();
+//                    }
+//                });
+//                AlertDialog alertDialog = builder.create();
+//                alertDialog.setCanceledOnTouchOutside(false);
+//                alertDialog.create();
+//                alertDialog.show();
                 break;
             case R.id.ll_upload://上传
                 AlertDialog.Builder builderUpload = new AlertDialog.Builder(CalibrationActivity.this);

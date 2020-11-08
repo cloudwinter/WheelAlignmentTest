@@ -105,19 +105,25 @@ public class UserRecordActivity extends BaseActivity implements View.OnClickList
      */
     private void initData() {
         recordList.clear();
-        cursor = db.query(dbHelper.TB_NAME, null, null, null, null, null, "_id ASC");
-        cursor.moveToFirst();
-        while (!cursor.isAfterLast()) {
-            String date = cursor.getString(2);
-            String registerNum = cursor.getString(1);
-            byte[] autograph = cursor.getBlob(7);
-            UserRecord userRecord = new UserRecord();
-            userRecord.setRegisterNum(registerNum);
-            userRecord.setTime(date);
-            userRecord.setAutograph(autograph);
-            recordList.add(userRecord);
-            cursor.moveToNext();
+        try {
+            cursor = db.query(dbHelper.TB_NAME, null, null, null, null, null, "_id ASC");
+            cursor.moveToFirst();
+            while (!cursor.isAfterLast()) {
+                String date = cursor.getString(2);
+                String registerNum = cursor.getString(1);
+                byte[] autograph = cursor.getBlob(7);
+                UserRecord userRecord = new UserRecord();
+                userRecord.setRegisterNum(registerNum);
+                userRecord.setTime(date);
+                userRecord.setAutograph(autograph);
+                recordList.add(userRecord);
+                cursor.moveToNext();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            Log.e(TAG, "-----initData", e);
         }
+
     }
 
     /**
