@@ -239,7 +239,7 @@
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/sp_14"
                 android:layout_marginLeft="80dp"
-                android:visibility="gone"/>
+                android:visibility="visible"/>
 
         </LinearLayout>
 

@@ -314,7 +314,6 @@ public class KingpinMeasureActivity extends BaseActivity implements View.OnClick
             return;
         } else {
             // 校准过
-//            i2 = yaw2 - l0_2;
             i2 = calculateIAfterAdjusting(yaw2,l0_2);
             tv2I.setText(NumberUtils.double2Str(i2));
         }
@@ -324,9 +323,9 @@ public class KingpinMeasureActivity extends BaseActivity implements View.OnClick
         if (!isDetermine2_1) {
             // 第一次进入时，还未点击确定
             if (i2 >= defaultInterval) {
-                p2_1 = i2;
+                p2_1 = pitch2;
                 w2_1 = roll2;
-                y2_1 = yaw2;
+                y2_1 = i2;
                 btn2Determine.setEnabled(true);
                 determine2();
             } else {
@@ -335,9 +334,9 @@ public class KingpinMeasureActivity extends BaseActivity implements View.OnClick
         } else if (isDetermine2_1 && !isDetermine2_2) {
             // 第一次已经确定，
             if (isInterval(i2, -p2_1, defaultPitch)) {
-                p2_2 = i2;
+                p2_2 = pitch2;
                 w2_2 = roll2;
-                y2_2 = yaw2;
+                y2_2 = i2;
                 btn2Determine.setEnabled(true);
                 determine2();
             } else {
@@ -371,9 +370,9 @@ public class KingpinMeasureActivity extends BaseActivity implements View.OnClick
         if (!isDetermine1_1) {
             // 第一次进入时，还未点击确定
             if (i1 >= defaultInterval) {
-                p1_1 = i1;
+                p1_1 = pitch1;
                 w1_1 = roll1;
-                y1_1 = yaw1;
+                y1_1 = i1;
                 determine1();
                 btnDetermine.setEnabled(true);
             } else {
@@ -382,9 +381,9 @@ public class KingpinMeasureActivity extends BaseActivity implements View.OnClick
         } else if (isDetermine1_1 && !isDetermine1_2) {
             // 第一次已经确定，
             if (isInterval(i1, -p1_1, defaultPitch)) {
-                p1_2 = i1;
+                p1_2 = pitch1;
                 w1_2 = roll1;
-                y1_2 = yaw1;
+                y1_2 = i1;
                 btnDetermine.setEnabled(true);
                 determine1();
             } else {
@@ -577,10 +576,10 @@ public class KingpinMeasureActivity extends BaseActivity implements View.OnClick
     }
 
     private void abrw1() {
-        a1 = UITools.A(w1_1, w1_2, i1);
-        b1 = UITools.B(p1_1, p1_2, i1);
-        r1 = i1 - l0_1;
-        w1 = w1_1 - w1_2;
+        a1 = UITools.A(p1_1, p1_2, i1);
+        b1 = UITools.B(w1_1, w1_2, i1);
+        r1 = Math.abs(i1);
+        w1 = Math.abs(w1_1 - w1_2);
         tv_caster_angle.setText(NumberUtils.double2Str(a1));
         tv_camber.setText(NumberUtils.double2Str(b1));
         tv_max_steering_angle.setText(NumberUtils.double2Str(r1));
@@ -588,10 +587,10 @@ public class KingpinMeasureActivity extends BaseActivity implements View.OnClick
     }
 
     private void abrw2() {
-        a2 = UITools.A(w2_1, w2_2, i2);
-        b2 = UITools.B(p2_1, p2_2, i2);
-        r2 = i2 - l0_2;
-        w2 = w2_1 - w2_2;
+        a2 = UITools.A(p2_1, p2_2, i2);
+        b2 = UITools.B(w2_1, w2_2, i2);
+        r2 = Math.abs(i2);
+        w2 = Math.abs(w2_1 - w2_2);
 
         tv2_caster_angle.setText(NumberUtils.double2Str(a2));
         tv2_camber.setText(NumberUtils.double2Str(b2));
