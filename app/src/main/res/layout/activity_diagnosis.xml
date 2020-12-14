@@ -107,7 +107,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="@dimen/dp_100"
                             android:layout_height="wrap_content"
                             android:text="Ccd_data0_A"
                             android:textSize="@dimen/sp_13" />
@@ -116,10 +116,11 @@
                             android:id="@+id/tv_ccd_data0_a"
                             android:layout_width="@dimen/dp_168"
                             android:layout_height="@dimen/dp_33"
-                            android:layout_marginLeft="@dimen/dp_80"
+                            android:layout_marginLeft="@dimen/dp_10"
                             android:background="@drawable/btn_round_gray"
                             android:gravity="center"
                             android:textColor="#352AB5"
+                            android:layout_weight="1"
                             android:textSize="@dimen/sp_13" />
 
                     </LinearLayout>
@@ -136,19 +137,22 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="@dimen/dp_100"
                             android:layout_height="wrap_content"
                             android:text="Ccd_data1_A"
-                            android:textSize="@dimen/sp_13" />
+                            android:textSize="@dimen/sp_13"
+
+                            />
 
                         <TextView
                             android:id="@+id/tv_ccd_data1_a"
                             android:layout_width="@dimen/dp_168"
                             android:layout_height="@dimen/dp_33"
-                            android:layout_marginLeft="@dimen/dp_80"
+                            android:layout_marginLeft="@dimen/dp_10"
                             android:background="@drawable/btn_round_gray"
                             android:gravity="center"
                             android:textColor="#352AB5"
+                            android:layout_weight="1"
                             android:textSize="@dimen/sp_13" />
                     </LinearLayout>
 
@@ -164,7 +168,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="@dimen/dp_100"
                             android:layout_height="wrap_content"
                             android:text="Roll_A"
                             android:textSize="@dimen/sp_13" />
@@ -173,11 +177,13 @@
                             android:id="@+id/tv_roll_a"
                             android:layout_width="@dimen/dp_168"
                             android:layout_height="@dimen/dp_33"
-                            android:layout_marginLeft="@dimen/dp_122"
+                            android:layout_marginLeft="@dimen/dp_10"
                             android:background="@drawable/btn_round_gray"
                             android:gravity="center"
                             android:textColor="#352AB5"
-                            android:textSize="@dimen/sp_13" />
+                            android:textSize="@dimen/sp_13"
+                            android:layout_weight="1"
+                            />
 
                     </LinearLayout>
 
@@ -193,7 +199,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="@dimen/dp_100"
                             android:layout_height="wrap_content"
                             android:text="Pitch_A"
                             android:textSize="@dimen/sp_13" />
@@ -202,11 +208,12 @@
                             android:id="@+id/tv_pitch_a"
                             android:layout_width="@dimen/dp_168"
                             android:layout_height="@dimen/dp_33"
-                            android:layout_marginLeft="@dimen/dp_114"
+                            android:layout_marginLeft="@dimen/dp_10"
                             android:background="@drawable/btn_round_gray"
                             android:gravity="center"
                             android:textColor="#352AB5"
-                            android:textSize="@dimen/sp_13" />
+                            android:textSize="@dimen/sp_13"
+                            android:layout_weight="1"/>
                     </LinearLayout>
 
                     <View
@@ -221,7 +228,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="@dimen/dp_100"
                             android:layout_height="wrap_content"
                             android:text="Yaw_A"
                             android:textSize="@dimen/sp_13" />
@@ -230,11 +237,12 @@
                             android:id="@+id/tv_yaw_a"
                             android:layout_width="@dimen/dp_168"
                             android:layout_height="@dimen/dp_33"
-                            android:layout_marginLeft="@dimen/dp_118"
+                            android:layout_marginLeft="@dimen/dp_10"
                             android:background="@drawable/btn_round_gray"
                             android:gravity="center"
                             android:textColor="#352AB5"
-                            android:textSize="@dimen/sp_13" />
+                            android:textSize="@dimen/sp_13"
+                            android:layout_weight="1"/>
                     </LinearLayout>
 
                     <View
@@ -282,7 +290,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="@dimen/dp_100"
                             android:layout_height="wrap_content"
                             android:text="Ccd_data0_B"
                             android:textSize="@dimen/sp_13" />
@@ -291,11 +299,12 @@
                             android:id="@+id/tv_ccd_data0_b"
                             android:layout_width="@dimen/dp_168"
                             android:layout_height="@dimen/dp_33"
-                            android:layout_marginLeft="@dimen/dp_80"
+                            android:layout_marginLeft="@dimen/dp_10"
                             android:background="@drawable/btn_round_gray"
                             android:gravity="center"
                             android:textColor="#352AB5"
-                            android:textSize="@dimen/sp_13" />
+                            android:textSize="@dimen/sp_13"
+                            android:layout_weight="1"/>
 
                     </LinearLayout>
 
@@ -311,7 +320,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="@dimen/dp_100"
                             android:layout_height="wrap_content"
                             android:text="Ccd_data1_B"
                             android:textSize="@dimen/sp_13" />
@@ -320,11 +329,12 @@
                             android:id="@+id/tv_ccd_data1_b"
                             android:layout_width="@dimen/dp_168"
                             android:layout_height="@dimen/dp_33"
-                            android:layout_marginLeft="@dimen/dp_80"
+                            android:layout_marginLeft="@dimen/dp_10"
                             android:background="@drawable/btn_round_gray"
                             android:gravity="center"
                             android:textColor="#352AB5"
-                            android:textSize="@dimen/sp_13" />
+                            android:textSize="@dimen/sp_13"
+                            android:layout_weight="1"/>
                     </LinearLayout>
 
                     <View
@@ -339,7 +349,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="@dimen/dp_100"
                             android:layout_height="wrap_content"
                             android:text="Roll_B"
                             android:textSize="@dimen/sp_13" />
@@ -348,11 +358,12 @@
                             android:id="@+id/tv_roll_b"
                             android:layout_width="@dimen/dp_168"
                             android:layout_height="@dimen/dp_33"
-                            android:layout_marginLeft="@dimen/dp_122"
+                            android:layout_marginLeft="@dimen/dp_10"
                             android:background="@drawable/btn_round_gray"
                             android:gravity="center"
                             android:textColor="#352AB5"
-                            android:textSize="@dimen/sp_13" />
+                            android:textSize="@dimen/sp_13"
+                            android:layout_weight="1"/>
 
                     </LinearLayout>
 
@@ -368,7 +379,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="@dimen/dp_100"
                             android:layout_height="wrap_content"
                             android:text="Pitch_B"
                             android:textSize="@dimen/sp_13" />
@@ -377,11 +388,12 @@
                             android:id="@+id/tv_pitch_b"
                             android:layout_width="@dimen/dp_168"
                             android:layout_height="@dimen/dp_33"
-                            android:layout_marginLeft="@dimen/dp_114"
+                            android:layout_marginLeft="@dimen/dp_10"
                             android:background="@drawable/btn_round_gray"
                             android:gravity="center"
                             android:textColor="#352AB5"
-                            android:textSize="@dimen/sp_13" />
+                            android:textSize="@dimen/sp_13"
+                            android:layout_weight="1"/>
                     </LinearLayout>
 
                     <View
@@ -396,7 +408,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="@dimen/dp_100"
                             android:layout_height="wrap_content"
                             android:text="Yaw_B"
                             android:textSize="@dimen/sp_13" />
@@ -405,11 +417,12 @@
                             android:id="@+id/tv_yaw_b"
                             android:layout_width="@dimen/dp_168"
                             android:layout_height="@dimen/dp_33"
-                            android:layout_marginLeft="@dimen/dp_117"
+                            android:layout_marginLeft="@dimen/dp_10"
                             android:background="@drawable/btn_round_gray"
                             android:gravity="center"
                             android:textColor="#352AB5"
-                            android:textSize="@dimen/sp_13" />
+                            android:textSize="@dimen/sp_13"
+                            android:layout_weight="1"/>
                     </LinearLayout>
 
                     <View

@@ -145,9 +145,9 @@ public class DiagnosisActivity extends BaseActivity implements View.OnClickListe
                             tv_pitch_a.setText("无数据");
                             tv_yaw_a.setText("无数据");
                         } else if (roll_pitch_yaw == 1) {
-                            tv_roll_a.setText(UITools.Roll(data[18], data[19]) + "");
-                            tv_pitch_a.setText(UITools.Pitch(data[20], data[21]) + "");
-                            tv_yaw_a.setText(UITools.Yaw(data[22], data[23]) + "");
+                            tv_roll_a.setText(UITools.Roll(data[18], data[19]) + "|" + UITools.M2(data[18],data[19]));
+                            tv_pitch_a.setText(UITools.Pitch(data[20], data[21]) + "|" + UITools.M2(data[20],data[21]));
+                            tv_yaw_a.setText(UITools.Yaw(data[22], data[23]) + "|" + UITools.M2(data[22],data[23]));
                         }
                         //socketUitls.sendOrder(Constants.measure2());
                     } else if (channel == 2) {
@@ -167,9 +167,9 @@ public class DiagnosisActivity extends BaseActivity implements View.OnClickListe
                             tv_pitch_b.setText("无数据");
                             tv_yaw_b.setText("无数据");
                         } else if (roll_pitch_yaw == 1) {
-                            tv_roll_b.setText(UITools.Roll(data[18], data[19]) + "");
-                            tv_pitch_b.setText(UITools.Pitch(data[20], data[21]) + "");
-                            tv_yaw_b.setText(UITools.Yaw(data[22], data[23]) + "");
+                            tv_roll_b.setText(UITools.Roll(data[18], data[19]) + "|" + UITools.M2(data[18],data[19]));
+                            tv_pitch_b.setText(UITools.Pitch(data[20], data[21]) + "|" + UITools.M2(data[20],data[21]));
+                            tv_yaw_b.setText(UITools.Yaw(data[22], data[23]) + "|" + UITools.M2(data[22],data[23]));
                         }
                         //socketUitls.sendOrder(Constants.measure());
                     }

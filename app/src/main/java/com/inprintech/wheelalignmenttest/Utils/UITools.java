@@ -231,6 +231,7 @@ public class UITools {
         }
     }
 
+
     /**
      * 计算Ccd_data的值
      *
@@ -243,6 +244,55 @@ public class UITools {
         return arctanValue;
     }
 
+    public static void main(String[] args) {
+        byte a = (byte) 0xBA;
+        byte b = (byte) 0xFE;
+        System.out.println(M2(a,b));
+    }
+
+
+    /**
+     * @param a L低信号
+     * @param b H高信号
+     * @return
+     */
+    public static int M2(byte a, byte b) {
+
+        byte[] orig = new byte[2];
+        orig[0] = b;
+        orig[1] = a;
+
+        byte[] result = new byte[2];
+        // 表示负数
+        if (0x80 == (orig[0] & 0x80)) {
+            // 先取反
+            int carry = 1;
+            result[1] = (byte) ~(orig[1]);
+            result[1] = (0xFF == result[1]) ? 0 : (byte) (result[1] + 1);
+            carry = (0 == result[1]) ? 1 : 0;
+            result[0] = (byte) ((~orig[0] + carry) | 0x80);
+
+            if (0x80 == (orig[1] & 0x80)) {
+                int i = 127 + result[0];
+                return -(i * 256 + 256 + result[1]);
+            } else {
+                int i = 127 + result[0];
+                return -(i * 256 + 256 + 128 + (128 + result[1]));
+            }
+
+        } else {
+            result[0] = orig[0];
+            if (0x80 == (orig[1] & 0x80)) {
+                result[1] = (byte) ~(orig[1]);
+                result[1] = (0xFF == result[1]) ? 0 : (byte) (result[1] + 1);
+                return result[0] * 256 + 256 - result[1];
+            } else {
+                result[1] = orig[1];
+                return result[0] * 256 + result[1];
+            }
+        }
+    }
+
     /**
      * 计算航向角
      *
@@ -251,7 +301,7 @@ public class UITools {
      * @return
      */
     public static double Roll(byte RollL, byte RollH) {
-        int m = M(RollL, RollH);
+        int m = M2(RollL, RollH);
         double m32768 = (m / 32768.0);
         double roll = m32768 * 180.0;
         return roll;
@@ -265,7 +315,7 @@ public class UITools {
      * @return
      */
     public static double Pitch(byte PitchL, byte PitchH) {
-        return M(PitchL, PitchH) / 32768.0 * 180.0;
+        return M2(PitchL, PitchH) / 32768.0 * 180.0;
     }
 
     /**
@@ -276,7 +326,7 @@ public class UITools {
      * @return
      */
     public static double Yaw(byte YawL, byte YawH) {
-        return M(YawL, YawH) / 32768.0 * 180.0;
+        return M2(YawL, YawH) / 32768.0 * 180.0;
     }
 
 

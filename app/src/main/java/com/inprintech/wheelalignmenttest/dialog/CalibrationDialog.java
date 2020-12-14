@@ -70,6 +70,7 @@ public class CalibrationDialog extends Dialog implements View.OnClickListener {
             case R.id.btn_device1:
                 if (getSelected() == 0) {
                     ToastUtil.showToast(mContext, "请至少选择一个", true);
+                    return;
                 }
                 if (mButtonClickListener != null) {
                     dismiss();
@@ -79,6 +80,7 @@ public class CalibrationDialog extends Dialog implements View.OnClickListener {
             case R.id.btn_device2:
                 if (getSelected() == 0) {
                     ToastUtil.showToast(mContext, "请至少选择一个", true);
+                    return;
                 }
                 if (mButtonClickListener != null) {
                     dismiss();
