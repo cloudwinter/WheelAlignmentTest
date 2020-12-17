@@ -248,6 +248,8 @@ public class UITools {
         byte a = (byte) 0xBA;
         byte b = (byte) 0xFE;
         System.out.println(M2(a,b));
+
+        System.out.println(A(1.19,1.55,-11.6));
     }
 
 
@@ -389,12 +391,19 @@ public class UITools {
      * @return
      */
     public static double A(double Y1,double Y2,double I){
-        double tanI = Math.tan(I);
-        double sin = Math.sin((Y1-Y2)/2);
+        // 先转为弧度
+        double newI = Math.toRadians(Math.abs(I));
+        double tanI = Math.tan(newI);
+        // 先转为弧度
+        double newSinVal = Math.toRadians((Y1-Y2)/2);
+        double sin = Math.sin(newSinVal);
         double X = sin / tanI;
-        double result = Math.atan(X);
+        double tanX = Math.atan(X);
+        // 弧度转角度
+        double result = Math.toDegrees(tanX);
         return result;
     }
+
 
 
     /**
@@ -405,10 +414,16 @@ public class UITools {
      * @return
      */
     public static double B(double P1,double P2,double I){
-        double tanI = Math.tan(I);
-        double sin = Math.sin((P1-P2)/2);
+        // 先转为弧度
+        double newI = Math.toRadians(Math.abs(I));
+        double tanI = Math.tan(newI);
+        // 先转为弧度
+        double newSinVal = Math.toRadians((P1-P2)/2);
+        double sin = Math.sin(newSinVal);
         double X = sin / tanI;
-        double result = Math.atan(X);
+        double tanX = Math.atan(X);
+        // 弧度转角度
+        double result = Math.toDegrees(tanX);
         return result;
     }
 

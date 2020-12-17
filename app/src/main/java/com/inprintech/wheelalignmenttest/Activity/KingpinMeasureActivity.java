@@ -333,7 +333,7 @@ public class KingpinMeasureActivity extends BaseActivity implements View.OnClick
             }
         } else if (isDetermine2_1 && !isDetermine2_2) {
             // 第一次已经确定，
-            if (isInterval(i2, -p2_1, defaultPitch)) {
+            if (isInterval(i2, -y2_1, defaultPitch)) {
                 p2_2 = pitch2;
                 w2_2 = roll2;
                 y2_2 = i2;
@@ -380,7 +380,7 @@ public class KingpinMeasureActivity extends BaseActivity implements View.OnClick
             }
         } else if (isDetermine1_1 && !isDetermine1_2) {
             // 第一次已经确定，
-            if (isInterval(i1, -p1_1, defaultPitch)) {
+            if (isInterval(i1, -y1_1, defaultPitch)) {
                 p1_2 = pitch1;
                 w1_2 = roll1;
                 y1_2 = i1;
@@ -413,9 +413,9 @@ public class KingpinMeasureActivity extends BaseActivity implements View.OnClick
     /**
      * 测量角是否在规定的区间之内
      *
-     * @param measureAngle
-     * @param referAngle
-     * @param interval  一定是一个正数
+     * @param measureAngle  i
+     * @param referAngle -p
+     * @param interval  一定是一个正数  区间默认0.5
      * @return
      */
     private boolean isInterval(double measureAngle, double referAngle, double interval) {
